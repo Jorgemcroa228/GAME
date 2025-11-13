@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: black;
@@ -30,4 +34,49 @@ body {
   mask-image: url(../assets/ezgif-502dca0b2d7a8fe8.gif);
   mask-size: cover;
   mask-position: center;
+}
+
+.title {
+  color: #ffffff;
+  animation-name: desaparecer;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  text-shadow: 5px 5px 9px #000000;
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.toy {
+  width: 666px;
+  height: 379px;
+  background-image: url(../assets/walkmario-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+  animation-name: encoger;
+  animation-duration: 6s;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+}
+
+@keyframes encoger {
+  form {
+    width: 666px;
+    height: 379px;
+    transform: rotate(0deg);
+  }
+
+  to {
+  width: 100px;
+  height: 85px;
+  transform: rotate(360deg);
+  }
 }
