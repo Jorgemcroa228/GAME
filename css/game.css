@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: #fff;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.banner .content .title {
+  font-family: "Rubik 80s Fade", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6em;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url(../assets/Mapa.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  mask-image: url(../assets/ezgif-502dca0b2d7a8fe8.gif);
+  mask-size: cover;
+  mask-position: center;
+}
